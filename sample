@@ -1,0 +1,5 @@
+bbpNjyxwnJ5VVNvb
+
+postgresql://postgres.mykzcffrtpkebhuargyp:[YOUR-PASSWORD]@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
+
+postgresql://postgres.mykzcffrtpkebhuargyp:bbpNjyxwnJ5VVNvb@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
