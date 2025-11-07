@@ -12,5 +12,5 @@ if (!url) {
 
 const client = postgres(url);
 export const db = drizzle(client, {
-  schema: { ...authSchema, },
+  schema: { ...authSchema, prepare: false },
 });
