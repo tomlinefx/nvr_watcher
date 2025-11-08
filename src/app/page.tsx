@@ -7,15 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export const Metadata = {
-  title: "Home",
-};
-
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Header />
-
       {/* ヒーローセクション */}
       <section className="relative flex h-[600px] items-center justify-center bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="absolute inset-0 bg-black/30" />
