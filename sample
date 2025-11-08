@@ -3,3 +3,13 @@ bbpNjyxwnJ5VVNvb
 postgresql://postgres.mykzcffrtpkebhuargyp:[YOUR-PASSWORD]@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
 
 postgresql://postgres.mykzcffrtpkebhuargyp:bbpNjyxwnJ5VVNvb@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
+
+
+
+NEXT_PUBLIC_SUPABASE_URL=https://mykzcffrtpkebhuargyp.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_rAYA8b3HybaS74IqjDvlSg_R4MRmM3H
+SUPABASE_SECRET_KEY=sb_secret_hAzFh_vm8aH7315OhdbxVQ_QHczmkKJ
+
+DATABASE_URL=postgresql://postgres.mykzcffrtpkebhuargyp:bbpNjyxwnJ5VVNvb@aws-1-ap-northeast-1.pooler.supabase.com:6543/postgres
+
+BETTER_AUTH_SECRET=NPgeuLQBeMel+qO0hFcsCsaUeFyCy0/+N1Ed6Vl71bo=
