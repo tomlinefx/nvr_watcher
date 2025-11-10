@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -14,7 +13,9 @@ export default function Home() {
       <section className="relative flex h-[600px] items-center justify-center bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <h1 className="mb-6 font-bold text-5xl md:text-6xl">シリウス電工</h1>
+          <h1 className="mb-6 font-bold text-5xl md:text-6xl">
+            ★★★シリウス電工★★★
+          </h1>
           <h3 className="mb-6 font-bold text-5xl md:text-6xl">
             人と人、人と社会をつなぐ
           </h3>
