@@ -12,13 +12,6 @@
     {
       "idx": 1,
       "version": "7",
-      "when": 1762761500326,
-      "tag": "0001_sloppy_wallflower",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
       "when": 1763367266602,
       "tag": "0002_chunky_silvermane",
       "breakpoints": true
