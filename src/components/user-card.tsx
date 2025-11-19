@@ -6,8 +6,11 @@ export function UserCard({ user }: { user: User }) {
   return (
     <Card className="mx-auto max-w-sm">
       <CardContent className="flex items-start gap-4 pt-6">
-        <Avatar className="h-12 w-12">
-          <AvatarImage alt={user.name} src="https://github.com/shadcn.png" />
+        <Avatar className="h-16 w-16 border">
+          <AvatarImage
+            alt={`${user.name} avatar`}
+            src={`https://api.dicebear.com/9.x/micah/svg?seed=${encodeURIComponent(user.id)}`}
+          />
           <AvatarFallback>{user.name[0]}</AvatarFallback>
         </Avatar>
         <div className="flex flex-1 flex-col gap-1 overflow-hidden">

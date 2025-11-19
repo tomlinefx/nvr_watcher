@@ -17,13 +17,24 @@ export default function PetsPage() {
       hp: 80,
       ownerId: "user456",
     },
+    {
+      id: "3",
+      name: "たま",
+      petType: "cat",
+      hp: 200,
+      ownerId: "user789",
+    },
   ];
   return (
-    <div>
-      <h1 className="mb-4 font-bold text-2xl">ペット一覧</h1>
-      {mockPets.map((pet) => (
-        <PetCard key={pet.id} pet={pet} />
-      ))}
+    <div className="container">
+      <h1 className="mb-6 font-bold text-2xl">ペット一覧</h1>
+      <div className="grid grid-cols-3 gap-4">
+        {mockPets.map((pet) => (
+          <div key={pet.id}>
+            <PetCard pet={pet} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
