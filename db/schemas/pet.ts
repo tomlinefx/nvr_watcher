@@ -3,7 +3,8 @@ import { integer, pgEnum, pgTable, text } from "drizzle-orm/pg-core";
 import { nanoid } from "nanoid";
 import { users } from "./auth";
 
-export const petTypeEnum = pgEnum("pet_type", ["dog", "cat"]);
+export const petType = ["dog", "cat"] as const;
+export const petTypeEnum = pgEnum("pet_type", petType);
 const DEFAULT_HP = 50;
 
 // ペットテーブル定義
