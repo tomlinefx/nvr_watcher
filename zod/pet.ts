@@ -3,8 +3,8 @@ import { z } from "zod";
 import { pets, petType } from "../db/schemas/pet";
 
 const MIN_HP = 0;
-const MAX_HP = 1000;
-const MIN_NAME_LENGTH = 50;
+const MAX_HP = 100;
+const MIN_NAME_LENGTH = 1;
 const MAX_NAME_LENGTH = 50;
 
 // 第2引数への関数で各フィールドのバリデーション追加
