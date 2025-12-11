@@ -1,6 +1,24 @@
 import { PetCard } from "@/components/pet-card";
-import type { Pet } from "../../../types/pet";
+import { getPets } from "../../../data/pet";
 
+export default async function PetsPage() {
+  const pets = await getPets();
+  return (
+    <div className="container">
+      <h1 className="mb-6 font-bold text-2xl">ペット一覧</h1>
+      <div className="grid grid-cols-3 gap-4">
+        {pets.map((pet) => (
+          <div key={pet.id}>
+            <PetCard pet={pet} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// 固定文字列通知
+/*
 export default function PetsPage() {
   const mockPets: Pet[] = [
     {
@@ -38,3 +56,4 @@ export default function PetsPage() {
     </div>
   );
 }
+*/
