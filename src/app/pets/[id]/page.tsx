@@ -1,5 +1,6 @@
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { getPet } from "@/../data/pet";
+import { DeletePetButton } from "@/components/delete-pet-button";
 import { PetCard } from "@/components/pet-card";
 import { PetForm } from "@/components/pet-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,7 +10,7 @@ export default async function PetPage({ params }: PageProps<"/pets/[id]">) {
   const pet = await getPet(petId);
 
   if (!pet) {
-    notFound();
+    redirect("/pets");
   }
 
   return (
@@ -22,6 +23,7 @@ export default async function PetPage({ params }: PageProps<"/pets/[id]">) {
         <CardContent>
           <PetForm defaultValues={pet} />
         </CardContent>
+        <DeletePetButton petId={petId} />
       </Card>
     </div>
   );

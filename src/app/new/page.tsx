@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function NewPage() {
   return (
     <div className="container py-10">
-      <PetForm mode="create" />
+      <PetForm />
     </div>
   );
 }
