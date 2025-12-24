@@ -1,5 +1,7 @@
+import Link from "next/link";
 import type { Pet, PetType } from "../../types/pet";
-import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardFooter } from "./ui/card";
 
 const MAX_HP = 100;
 const PERCENT_MULTIPLIER = 100;
@@ -56,6 +58,7 @@ export function PetCard({ pet }: { pet: Pet }) {
             <span className="text-muted-foreground">
               {pet.hp} / {MAX_HP}
             </span>
+            j
           </div>
           <div className="h-4 w-full overflow-hidden rounded-full bg-gray-200">
             <div
@@ -65,6 +68,11 @@ export function PetCard({ pet }: { pet: Pet }) {
           </div>
         </div>
       </CardContent>
+      <CardFooter>
+        <Button asChild>
+          <Link href={`/pets/${pet.id}`}>編集</Link>
+        </Button>
+      </CardFooter>
     </Card>
   );
 }
